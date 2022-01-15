@@ -31,6 +31,7 @@ body {
 .section-title h2 {
     font-size: 30px;
 }
+
 .btn {
     padding: 8px 20px;
     font-size: 18px;
@@ -45,10 +46,12 @@ body {
     background-color: transparent;
     overflow: hidden;
 }
-.btn:hover{
+
+.btn:hover {
     color: #000;
 }
-.btn::before{
+
+.btn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -60,9 +63,11 @@ body {
     z-index: -1;
     transition: left 0.8s linear;
 }
-.btn:hover::before{
+
+.btn:hover::before {
     left: 100%;
 }
+
 /*====================
     header style
 ======================*/
@@ -72,9 +77,11 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.nav-icon{
+
+.nav-icon {
     display: none;
 }
+
 .text-logo {
     font-size: 30px;
 }
@@ -215,25 +222,29 @@ body {
 .right-arrow {
     font-size: 20px;
 }
+
 /*====================
     support card style
 ======================*/
-.facilities{
+.facilities {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 20px;
 }
-.facilitie .card{
+
+.facilitie .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px 0;
 }
-.facilitie .card h2{
+
+.facilitie .card h2 {
     font-size: 20px;
     margin-top: 20px;
 }
-.icons{
+
+.icons {
     width: 70px;
     height: 70px;
     background-color: #E02C6D;
@@ -243,7 +254,8 @@ body {
     align-items: center;
     position: relative;
 }
-.icons::before{
+
+.icons::before {
     border-radius: 50%;
     position: absolute;
     width: 70px;
@@ -251,20 +263,28 @@ body {
     content: "";
     border: 1px solid #E02C6D;
 }
-.icons:hover::before{
+
+.icons:hover::before {
     animation: animated 1s infinite;
 }
-@keyframes animated{
-    0%{
+
+.card h2 {
+    text-align: center;
+}
+
+@keyframes animated {
+    0% {
         width: 70px;
         height: 70px;
     }
-    100%{
+
+    100% {
         width: 100px;
         height: 100px;
     }
 }
-.icons i{
+
+.icons i {
     color: white;
     font-size: 28px;
 }
@@ -328,6 +348,7 @@ footer {
  Tab responsive style
 ======================*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
     /*====================
          common style
     ======================*/
@@ -335,16 +356,17 @@ footer {
         width: 90%;
         margin: 0 auto;
     }
-    
+
     .section-title {
         display: flex;
         justify-content: center;
         margin: 30px 0;
     }
-    
+
     .section-title h2 {
         font-size: 25px;
     }
+
     /*====================
     banner style
     ======================*/
@@ -361,6 +383,7 @@ footer {
     .banner-title {
         font-size: 26px;
     }
+
     .banner-img {
         background-image: url(../images/image/Circle\ design.svg);
         background-repeat: no-repeat;
@@ -371,6 +394,7 @@ footer {
         align-items: center;
         width: 100%;
     }
+
     /*====================
       products card style
     ======================*/
@@ -379,6 +403,7 @@ footer {
         grid-template-columns: repeat(2, 1fr);
         padding: 20px 0;
     }
+
     .flied {
         color: #FB8200;
         font-size: 12px;
@@ -401,52 +426,60 @@ footer {
         margin-bottom: 30px;
         margin-top: 10px;
     }
+
     .right-arrow {
         font-size: 20px;
     }
+
     /*====================
     support card style
     ======================*/
-    .facilities{
+    .facilities {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 20px;
     }
 }
+
 /*====================
  Mobile responsive style
 ======================*/
 @media only screen and (max-width: 768px) {
-        /*====================
+
+    /*====================
          common style
     ======================*/
     .container {
         width: 90%;
         margin: 0 auto;
     }
-    
+
     .section-title {
         display: flex;
         justify-content: center;
         margin: 30px 0;
     }
-    
+
     .section-title h2 {
         font-size: 25px;
     }
+
     /*====================
     header style
     ======================*/
-    .nav-icon{
+    .nav-icon {
         display: block;
         margin-right: 30px;
     }
-    .nav-icon:active.nav-icon i{
+
+    .nav-icon:active.nav-icon i {
         color: #E02C6D;
     }
-    .nav-icon i{
+
+    .nav-icon i {
         font-size: 25px;
     }
+
     .text-logo {
         font-size: 20px;
     }
@@ -458,13 +491,16 @@ footer {
     .shop-menu a {
         margin-left: 20px;
     }
-    .fa-search{
+
+    .fa-search {
         display: none;
     }
+
     .shop-menu a i {
         color: black;
         font-size: 25px;
     }
+
     /*====================
     banner style
     ======================*/
@@ -486,12 +522,15 @@ footer {
     .banner-title {
         font-size: 28px;
     }
-    .banner-img{
+
+    .banner-img {
         order: 0;
     }
-    .banner-img img{
+
+    .banner-img img {
         width: 100%;
     }
+
     /*====================
       products card style
     ======================*/
@@ -500,13 +539,15 @@ footer {
         grid-template-columns: 1fr;
         padding: 20px 0;
     }
+
     .link {
         justify-content: center;
     }
+
     /*====================
     support card style
     ======================*/
-    .facilities{
+    .facilities {
         display: grid;
         grid-template-columns: 1fr;
         grid-column-gap: 20px;
