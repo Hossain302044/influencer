@@ -368,6 +368,39 @@ footer {
     }
 
     /*====================
+    header style
+    ======================*/
+    .nav-icon {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .nav-icon:active.nav-icon i {
+        color: #E02C6D;
+    }
+
+    .nav-icon i {
+        font-size: 25px;
+    }
+
+    .text-logo {
+        font-size: 30px;
+    }
+
+    .menu nav ul {
+        display: none;
+    }
+
+    .shop-menu a {
+        margin-left: 20px;
+    }
+
+    .shop-menu a i {
+        color: black;
+        font-size: 25px;
+    }
+
+    /*====================
     banner style
     ======================*/
     .banner {
@@ -430,6 +463,7 @@ footer {
     .right-arrow {
         font-size: 20px;
     }
+
 
     /*====================
     support card style
