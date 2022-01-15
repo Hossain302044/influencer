@@ -1,0 +1,514 @@
+/* google font link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/*====================
+     common style
+======================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.section-title h2 {
+    font-size: 30px;
+}
+.btn {
+    padding: 8px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    color: white;
+    border: 1px solid #E02C6D;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color 0.6s linear;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+}
+.btn:hover{
+    color: #000;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    background-color: #E02C6D;
+    z-index: -1;
+    transition: left 0.8s linear;
+}
+.btn:hover::before{
+    left: 100%;
+}
+/*====================
+    header style
+======================*/
+.navbar {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-icon{
+    display: none;
+}
+.text-logo {
+    font-size: 30px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu nav ul {
+    display: flex;
+}
+
+.menu nav ul li {
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+.menu nav ul li a {
+    color: black;
+}
+
+.menu nav ul li a:hover,
+.shop-menu a i:hover {
+    color: #E02C6D;
+}
+
+.shop-menu a {
+    margin-left: 20px;
+}
+
+.shop-menu a i {
+    color: black;
+    font-size: 18px;
+}
+
+/*====================
+    banner style
+======================*/
+.banner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+}
+
+.banner-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-title {
+    font-size: 40px;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+.banner-img {
+    background-image: url(../images/image/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*====================
+    products card style
+======================*/
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 20px 0;
+}
+
+.product {
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 2px 2px 20px 0px rgba(0, 0, 0, 0.30);
+}
+
+.product-images img {
+    width: 100%;
+}
+
+.product-title {
+    margin-top: 10px 0;
+    font-size: 24px;
+}
+
+.prices {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+}
+
+.flied {
+    color: #FB8200;
+    font-size: 12px;
+}
+
+.review p {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.product-details {
+    color: #787885;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.link {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.highlights {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #E02C6D;
+    font-weight: 800;
+}
+
+.right-arrow {
+    font-size: 20px;
+}
+/*====================
+    support card style
+======================*/
+.facilities{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+}
+.facilitie .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+.facilitie .card h2{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.icons{
+    width: 70px;
+    height: 70px;
+    background-color: #E02C6D;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.icons::before{
+    border-radius: 50%;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    content: "";
+    border: 1px solid #E02C6D;
+}
+.icons:hover::before{
+    animation: animated 1s infinite;
+}
+@keyframes animated{
+    0%{
+        width: 70px;
+        height: 70px;
+    }
+    100%{
+        width: 100px;
+        height: 100px;
+    }
+}
+.icons i{
+    color: white;
+    font-size: 28px;
+}
+
+/*====================
+    footer card style
+======================*/
+footer {
+    background-color: #0A0826;
+}
+
+.footers {
+    padding: 30px 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    color: white;
+    font-size: 24px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer p,
+.footer small {
+    color: white;
+}
+
+.social-icon {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icon li {
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #292747ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon li a {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+/*====================
+ Tab responsive style
+======================*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    /*====================
+         common style
+    ======================*/
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .section-title {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 25px;
+    }
+    /*====================
+    banner style
+    ======================*/
+    .banner {
+        grid-column-gap: 0px;
+    }
+
+    .banner-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner-title {
+        font-size: 26px;
+    }
+    .banner-img {
+        background-image: url(../images/image/Circle\ design.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    /*====================
+      products card style
+    ======================*/
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px 0;
+    }
+    .flied {
+        color: #FB8200;
+        font-size: 12px;
+    }
+
+    .review p {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .product-details {
+        color: #787885;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .link {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+    .right-arrow {
+        font-size: 20px;
+    }
+    /*====================
+    support card style
+    ======================*/
+    .facilities{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+    }
+}
+/*====================
+ Mobile responsive style
+======================*/
+@media only screen and (max-width: 600px) {
+        /*====================
+         common style
+    ======================*/
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .section-title {
+        display: flex;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 25px;
+    }
+    /*====================
+    header style
+    ======================*/
+    .nav-icon{
+        display: block;
+        margin-right: 30px;
+    }
+    .nav-icon:active.nav-icon i{
+        color: #E02C6D;
+    }
+    .nav-icon i{
+        font-size: 25px;
+    }
+    .text-logo {
+        font-size: 20px;
+    }
+
+    .menu nav ul {
+        display: none;
+    }
+
+    .shop-menu a {
+        margin-left: 20px;
+    }
+    .fa-search{
+        display: none;
+    }
+    .shop-menu a i {
+        color: black;
+        font-size: 25px;
+    }
+    /*====================
+    banner style
+    ======================*/
+    .banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+    }
+
+    .banner-details {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 28px;
+    }
+    .banner-img{
+        order: 0;
+    }
+    .banner-img img{
+        width: 100%;
+    }
+    /*====================
+      products card style
+    ======================*/
+    .products {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px 0;
+    }
+    .link {
+        justify-content: center;
+    }
+    /*====================
+    support card style
+    ======================*/
+    .facilities{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 20px;
+    }
+}
